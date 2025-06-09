@@ -7,12 +7,12 @@
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { App } from "./App";
+import HomePage from "@/pages/home/page";
 
 const elem = document.getElementById("root")!;
 const app = (
   <StrictMode>
-    <App />
+    <HomePage />
   </StrictMode>
 );
 
