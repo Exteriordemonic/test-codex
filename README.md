@@ -18,4 +18,9 @@ To run for production:
 bun start
 ```
 
+### Environment variables
+
+Set `AI_DEVS_API_KEY` and `XYZ_AGENTS_ORG` before starting the server.
+Downloaded data is cached in the `data` directory.
+
 This project was created using `bun init` in bun v1.2.13. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.

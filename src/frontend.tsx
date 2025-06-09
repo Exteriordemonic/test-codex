@@ -8,11 +8,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import HomePage from "@/pages/home/page";
+import QuestionsPage from "@/pages/questions/page";
 
 const elem = document.getElementById("root")!;
+const Page = window.location.pathname.startsWith("/questions")
+  ? QuestionsPage
+  : HomePage;
+
 const app = (
   <StrictMode>
-    <HomePage />
+    <Page />
   </StrictMode>
 );
 

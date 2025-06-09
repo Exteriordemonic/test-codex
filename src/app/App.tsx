@@ -8,6 +8,9 @@ export function App() {
         <CardContent className="pt-6">
           <h1 className="text-5xl font-bold my-4 leading-tight">Blank App</h1>
           <p>Start building your application using Feature-Sliced Design.</p>
+          <a href="/questions" className="text-primary underline">
+            View Questions
+          </a>
         </CardContent>
       </Card>
     </div>
