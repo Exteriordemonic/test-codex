@@ -9,11 +9,14 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import HomePage from "@/pages/home/page";
 import QuestionsPage from "@/pages/questions/page";
+import PhoneTranscriptionPage from "@/pages/phone-transcription/page";
 
 const elem = document.getElementById("root")!;
 const Page = window.location.pathname.startsWith("/questions")
   ? QuestionsPage
-  : HomePage;
+  : window.location.pathname.startsWith("/phone-transcription")
+    ? PhoneTranscriptionPage
+    : HomePage;
 
 const app = (
   <StrictMode>
